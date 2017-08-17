@@ -22,8 +22,8 @@
 
   <div>
     <%= f.label :cities %><br>
-    <%= f.collection_select :city_ids, @cities, :id, :name, {},
-                               {:multiple => true} %>
+    
+                               <%= f.collection_check_boxes :city_ids, @cities, :id, :name, {}, {:multiple => true} %>
   </div>
   <div class="field">
     <%= f.label :quality_score %><br>
